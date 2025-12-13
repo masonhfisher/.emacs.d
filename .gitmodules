@@ -1,0 +1,15 @@
+[submodule "packages/dired-sidebar"]
+	path = packages/dired-sidebar
+	url = git@github.com:jojojames/dired-sidebar.git
+[submodule "packages/dired-hacks"]
+	path = packages/dired-hacks
+	url = git@github.com:Fuco1/dired-hacks.git
+[submodule "packages/dash"]
+	path = packages/dash
+	url = git@github.com:magnars/dash.el.git
+[submodule "packages/nerd-icons"]
+	path = packages/nerd-icons
+	url = git@github.com:rainstormstudio/nerd-icons.el.git
+[submodule "packages/nerd-icons-dired"]
+	path = packages/nerd-icons-dired
+	url = git@github.com:rainstormstudio/nerd-icons-dired.git
