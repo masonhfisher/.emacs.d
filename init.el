@@ -38,6 +38,8 @@
 ;;;;;;;;;;;
 ; Sidebar ;
 ;;;;;;;;;;;
+
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (add-to-list 'load-path "~/.emacs.d/packages/dired-hacks")
 (add-to-list 'load-path "~/.emacs.d/packages/dired-sidebar")
 (add-to-list 'load-path "~/.emacs.d/packages/dash")
@@ -49,7 +51,9 @@
 (require 'nerd-icons-dired)
 (add-hook 'dired-mode-hook #'nerd-icons-dired-mode)
 
-(dired-sidebar-toggle-sidebar)
+(require 'omit)
+(setq default-directory "~/Documents/projects")
+(dired-sidebar-show-sidebar)
 (global-set-key (kbd "C-<left>") 'dired-sidebar-toggle-sidebar)
 
 ;;;;;;;;;;;;
