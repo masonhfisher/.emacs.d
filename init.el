@@ -14,11 +14,14 @@
 (setq indent-line-function 'insert-tab)
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
+(setq c-default-style "stroustrup"
+      c-basic-offset 4)
+
 (add-hook 'html-mode-hook
-          (lambda ()
-            (setq-default tab-width 4)
-            (setq indent-tabs-mode nil)
-            (setq sgml-basic-offset 4)))
+      (lambda ()
+          (setq-default tab-width 4)
+          (setq indent-tabs-mode nil)
+          (setq sgml-basic-offset 4)))
 
 ;;;;;;;;;;;;;;;;;;
 ; Hide passwords ;
